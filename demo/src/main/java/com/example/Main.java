@@ -17,7 +17,7 @@ public class MusicSheetApp {
         // custom background
         try {
             
-            backgroundImage = ImageIO.read(new File("C:\\Users\\awazn\\Downloads\\music-player-2951399_1280.jpg\""));
+            backgroundImage = ImageIO.read(new File(""));
         } catch (Exception e) {
             e.printStackTrace();
             backgroundImage = null; 
