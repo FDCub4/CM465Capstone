@@ -1,0 +1,48 @@
+﻿<Window x:Class="TestingMasuka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestingMasuka"
+        xmlns:ManufakturaControls="clr-namespace:Manufaktura.Controls.WPF;assembly=Manufaktura.Controls.WPF"
+        xmlns:music="clr-namespace:WPFSoundVisualizationLib;assembly=WPFSoundVisualizationLibNet5"
+        xmlns:scottPlot="clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
+
+        Title="MainWindow" Height="550" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="58*"/>
+            <ColumnDefinition Width="743*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="10,0,0,372" Grid.ColumnSpan="2">
+            <Menu VerticalAlignment="Top">
+                <MenuItem x:Name="menu_file" Header="File" Click="btnMenu_Click">
+                    <MenuItem Header="Open" Click="btnOpen_Click"/>
+                    <MenuItem Header="Save" Click="btnSave_Click"/>
+                    <Separator />
+                </MenuItem>
+                <MenuItem Header="Edit" Click="btnEdit_Click">
+                    <MenuItem Header="Undo" Click="btnUndo_Click" />
+                    <MenuItem Header="Redo" Click="btnRedo_Click" />
+                </MenuItem>
+                <MenuItem Header="Export to PDF" Click="btnExportPDF_click"/>
+                <MenuItem Header="Exit" Click="btnExit_click"/>
+                <MenuItem x:Name="btnHelp" Header="Help" Click="btnHelp_click">
+                    <MenuItem Header="About" />
+                </MenuItem>
+            </Menu>
+            <Button x:Name="btnRecord" Content="Record" Click="btnRecord_Click" Width="166" Height="36"/>
+        </StackPanel>
+
+
+        <StackPanel Margin="0,272,0,0" Grid.ColumnSpan="2" RenderTransformOrigin="0.494,0.775">
+
+            <ManufakturaControls:NoteViewer x:Name="noteViewer1" HorizontalAlignment="Stretch" Margin="10,10,0,0" VerticalAlignment="Top" ScoreSource="{Binding Data}" Loaded="noteViewer1_Loaded"/>
+             <scottPlot:WpfPlot x:Name="wpfPlot" Height="100"/> 
+
+        </StackPanel>
+        <Button x:Name="btnLoadFile" Grid.Column="1" Content="Load File" HorizontalAlignment="Left" Margin="145,136,0,0" VerticalAlignment="Top" Click="btnLoadFile_Click"/>
+        <TextBox x:Name="txtFileSelected" Grid.Column="1" HorizontalAlignment="Left" Margin="287,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtFileSelected_TextChanged"/>
+        <Image x:Name="imgLogo" Grid.Column="1" HorizontalAlignment="Left" Height="139" Margin="566,35,0,0" VerticalAlignment="Top" Width="125" Source="/pngAudioTranscriber.png"/>
+    </Grid>
+</Window>
