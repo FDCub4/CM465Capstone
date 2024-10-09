@@ -668,24 +668,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fdcub\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\kenny\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\AudioMonitor.csproj",
+      "projectUniqueName": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\AudioMonitor.csproj",
       "projectName": "AudioMonitor",
-      "projectPath": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\AudioMonitor.csproj",
-      "packagesPath": "C:\\Users\\fdcub\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\obj\\",
+      "projectPath": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\AudioMonitor.csproj",
+      "packagesPath": "C:\\Users\\kenny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\fdcub\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\kenny\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
