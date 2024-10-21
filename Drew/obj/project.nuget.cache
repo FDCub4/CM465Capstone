@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Pd5pbYyNNoQ=",
+  "dgSpecHash": "XlXPKcckbus=",
   "success": true,
-  "projectFilePath": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\AudioMonitor.csproj",
+  "projectFilePath": "C:\\Users\\fdcub\\Documents\\CM465Capstone\\Drew\\AudioMonitor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fdcub\\.nuget\\packages\\fftsharp\\1.1.5\\fftsharp.1.1.5.nupkg.sha512",
     "C:\\Users\\fdcub\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
