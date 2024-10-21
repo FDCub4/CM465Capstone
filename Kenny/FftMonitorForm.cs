@@ -31,8 +31,11 @@ public partial class FftMonitorForm : Form
 
         AudioDevice.DataAvailable += WaveIn_DataAvailable;
         AudioDevice.StartRecording();
-
+        End.Click += EndButton_Click;
         FormClosed += FftMonitorForm_FormClosed;
+
+        string logFilePath = "frequencies.txt";
+        File.WriteAllText(logFilePath, string.Empty);
     }
 
     private void FftMonitorForm_FormClosed(object? sender, FormClosedEventArgs e)
@@ -148,6 +151,16 @@ public partial class FftMonitorForm : Form
         int octave = (roundedNoteNumber + 8) / notes.Length;
 
         return (note, octave);
+    }
+
+    private void EndButton_Click(object sender, EventArgs e)
+    {
+        // Stop recording and dispose of the audio device
+        AudioDevice.StopRecording();
+        AudioDevice.Dispose();
+
+        // Close the form to end the application
+        this.Close();
     }
 
 }

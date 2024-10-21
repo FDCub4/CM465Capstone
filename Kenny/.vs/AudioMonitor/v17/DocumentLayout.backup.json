@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|c:\\users\\kenny\\documents\\github\\cm465capstone\\kenny\\fftmonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|solutionrelative:fftmonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\fftmonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|solutionrelative:fftmonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|c:\\users\\kenny\\documents\\github\\cm465capstone\\kenny\\menuform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|solutionrelative:menuform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|solutionrelative:menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|c:\\users\\kenny\\documents\\github\\cm465capstone\\kenny\\fftmonitorform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|solutionrelative:fftmonitorform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\audiomonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|solutionrelative:audiomonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\MenuForm.Designer.cs",
+              "RelativeDocumentMoniker": "MenuForm.Designer.cs",
+              "ToolTip": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\MenuForm.Designer.cs",
+              "RelativeToolTip": "MenuForm.Designer.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T17:42:48.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FftMonitorForm.cs",
+              "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\FftMonitorForm.cs",
+              "RelativeDocumentMoniker": "FftMonitorForm.cs",
+              "ToolTip": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\FftMonitorForm.cs",
+              "RelativeToolTip": "FftMonitorForm.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAowCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T17:22:19.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FftMonitorForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\FftMonitorForm.Designer.cs",
+              "RelativeDocumentMoniker": "FftMonitorForm.Designer.cs",
+              "ToolTip": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\FftMonitorForm.Designer.cs",
+              "RelativeToolTip": "FftMonitorForm.Designer.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwC8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T17:22:10.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FftMonitorForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\FftMonitorForm.cs",
+              "RelativeDocumentMoniker": "FftMonitorForm.cs",
+              "ToolTip": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\FftMonitorForm.cs [Design]",
+              "RelativeToolTip": "FftMonitorForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T17:19:55.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MenuForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\MenuForm.cs",
+              "RelativeDocumentMoniker": "MenuForm.cs",
+              "ToolTip": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\MenuForm.cs [Design]",
+              "RelativeToolTip": "MenuForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T17:19:54.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AudioMonitorForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\AudioMonitorForm.cs",
+              "RelativeDocumentMoniker": "AudioMonitorForm.cs",
+              "ToolTip": "C:\\Users\\kenny\\Documents\\GitHub\\CM465Capstone\\Kenny\\AudioMonitorForm.cs [Design]",
+              "RelativeToolTip": "AudioMonitorForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T17:19:45.657Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
