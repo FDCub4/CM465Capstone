@@ -150,4 +150,9 @@ public partial class FftMonitorForm : Form
         return (note, octave);
     }
 
+    private void button1_Click(object sender, EventArgs e)
+    {
+        AudioFilePeakLogger work = new AudioFilePeakLogger(@"C:\Users\fdcub\Downloads\C4 61 key Piano.mp3");
+        work.ProcessFile("C:\\Users\\fdcub\\OneDrive\\Documents\\CM-465\\WorkPlease.txt");
+    }
 }
