@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\",
+  "WorkspaceRootPath": "C:\\Users\\fdcub\\Documents\\CM465Capstone\\Drew\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|c:\\users\\fdcub\\downloads\\audiomonitor\\audiomonitor\\audiomonitor\\audiofilepeaklogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|solutionrelative:audiofilepeaklogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|c:\\users\\fdcub\\downloads\\audiomonitor\\audiomonitor\\audiomonitor\\fftmonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|c:\\users\\fdcub\\documents\\cm465capstone\\drew\\fftmonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|solutionrelative:fftmonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\fftmonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|C:\\Users\\fdcub\\Documents\\CM465Capstone\\Drew\\fftmonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|solutionrelative:fftmonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|c:\\users\\fdcub\\documents\\cm465capstone\\drew\\audiofilepeaklogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63340D51-176C-43E3-B9D1-1BB717020128}|AudioMonitor.csproj|solutionrelative:audiofilepeaklogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,37 +30,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AudioFilePeakLogger.cs",
-              "DocumentMoniker": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\AudioFilePeakLogger.cs",
+              "DocumentMoniker": "C:\\Users\\fdcub\\Documents\\CM465Capstone\\Drew\\AudioFilePeakLogger.cs",
               "RelativeDocumentMoniker": "AudioFilePeakLogger.cs",
-              "ToolTip": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\AudioFilePeakLogger.cs",
+              "ToolTip": "C:\\Users\\fdcub\\Documents\\CM465Capstone\\Drew\\AudioFilePeakLogger.cs",
               "RelativeToolTip": "AudioFilePeakLogger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-20T19:16:26.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FftMonitorForm.cs",
-              "DocumentMoniker": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\FftMonitorForm.cs",
+              "DocumentMoniker": "C:\\Users\\fdcub\\Documents\\CM465Capstone\\Drew\\FftMonitorForm.cs",
               "RelativeDocumentMoniker": "FftMonitorForm.cs",
-              "ToolTip": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\FftMonitorForm.cs",
+              "ToolTip": "C:\\Users\\fdcub\\Documents\\CM465Capstone\\Drew\\FftMonitorForm.cs",
               "RelativeToolTip": "FftMonitorForm.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAA9wJoAAABqAAAAAAAAAA==",
+              "ViewState": "AgIAAIkAAAAAAAAAAAD4v5kAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T18:28:20.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "FftMonitorForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\FftMonitorForm.cs",
+              "DocumentMoniker": "C:\\Users\\fdcub\\Documents\\CM465Capstone\\Drew\\FftMonitorForm.cs",
               "RelativeDocumentMoniker": "FftMonitorForm.cs",
-              "ToolTip": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\FftMonitorForm.cs [Design]",
+              "ToolTip": "C:\\Users\\fdcub\\Documents\\CM465Capstone\\Drew\\FftMonitorForm.cs [Design]",
               "RelativeToolTip": "FftMonitorForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-19T18:32:22.856Z",

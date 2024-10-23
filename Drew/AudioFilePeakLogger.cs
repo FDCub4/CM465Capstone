@@ -23,7 +23,7 @@ namespace AudioMonitor
             bytesPerSample = waveFormat.BitsPerSample / 8;
 
             //Prep work for processing using FFT
-            AudioValues = new double[sampleRate / 100];  // 10ms chunks
+            AudioValues = new double[sampleRate / 100];  // 100ms chunks
             double[] paddedAudio = FftSharp.Pad.ZeroPad(AudioValues);
             double[] fftMag = FftSharp.Transform.FFTpower(paddedAudio);
             FftValues = new double[fftMag.Length];

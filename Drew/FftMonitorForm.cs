@@ -152,7 +152,7 @@ public partial class FftMonitorForm : Form
 
     private void button1_Click(object sender, EventArgs e)
     {
-        AudioFilePeakLogger work = new AudioFilePeakLogger(@"C:\Users\fdcub\Downloads\C4 61 key Piano.mp3");
+        AudioFilePeakLogger work = new AudioFilePeakLogger(@"C:\Users\fdcub\Downloads\Gundam Build Fighters BACK-ON  Carry on (Melody).mp3");
         work.ProcessFile("C:\\Users\\fdcub\\OneDrive\\Documents\\CM-465\\WorkPlease.txt");
     }
 }
