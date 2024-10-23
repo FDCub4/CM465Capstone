@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KvzSopYY5cs=",
+  "dgSpecHash": "l0I6HRgg03M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\TestingMasuka.csproj",
+  "projectFilePath": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\TestingMasuka.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\treya\\.nuget\\packages\\fftsharp\\2.1.0\\fftsharp.2.1.0.nupkg.sha512",
     "C:\\Users\\treya\\.nuget\\packages\\manufaktura.controls\\1.4.2\\manufaktura.controls.1.4.2.nupkg.sha512",

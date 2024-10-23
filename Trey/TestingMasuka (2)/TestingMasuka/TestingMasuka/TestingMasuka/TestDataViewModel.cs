@@ -87,6 +87,7 @@ public class TestData : ViewModel
                         //    currentStaff.Elements.Add(new Manufaktura.Controls.Model.Key(0));
                         //    score.Staves.Add(currentStaff); // Add new staff to the score
                         //}
+                        //changes worked
                     }
                 }
 
@@ -258,131 +259,6 @@ public class TestData : ViewModel
 
         return closestDuration;
     }
-    //public static (string note, int octave) FreqToNote(double freq)
-    //{
-    //    // Array of note names
-    //    string[] notes = { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" };
-
-    //    // Calculate the note number based on frequency
-    //    double noteNumber = 12 * Math.Log2(freq / 440) + 49; // A4 is 440 Hz and is the 49th key on a piano
-    //    int roundedNoteNumber = (int)Math.Round(noteNumber);
-
-    //    // Calculate the note index within the array of notes
-    //    int noteIndex = (roundedNoteNumber - 1) % notes.Length;
-    //    if (noteIndex < 0)
-    //        noteIndex += notes.Length; // Adjust for negative indices
-
-    //    // Get the note name from the array
-    //    string note = notes[noteIndex];
-
-    //    // Calculate the octave
-    //    int octave = (roundedNoteNumber / notes.Length) + 4; // Adjust octave calculation as needed
-
-    //    return (note, octave);
-    //}
-
-
-
-    //public static Pitch MapNoteToPitch(string note, int octave, int alter =0)
-    //{
-    //    switch (note)
-    //    {
-    //        case "A": return Pitch.A.ToPitch(octave);
-    //        case "A#": return Pitch.ASharp.ToPitch(octave);
-    //        case "B": return Pitch.B.ToPitch(octave);
-    //        case "C": return Pitch.C.ToPitch(octave);
-    //        case "C#": return Pitch.CSharp.ToPitch(octave);
-    //        case "D": return Pitch.D.ToPitch(octave);
-    //        case "D#": return Pitch.DSharp.ToPitch(octave);
-    //        case "E": return Pitch.E.ToPitch(octave);
-    //        case "F": return Pitch.F.ToPitch(octave);
-    //        case "F#": return Pitch.FSharp.ToPitch(octave);
-    //        case "G": return Pitch.G.ToPitch(octave);
-    //        case "G#": return Pitch.GSharp.ToPitch(octave);
-    //        default: throw new ArgumentException("Invalid note name");
-    //    }
-    //}
-
-    //public (string note, int octave, int alter) FreqToNoteWithAccidental(double frequency)
-    //{
-    //    // Reference frequencies for natural notes (A4 = 440 Hz, etc.)
-    //    var referenceFrequencies = new Dictionary<string, double>
-    //{
-    //    { "C", 261.63 }, { "D", 293.66 }, { "E", 329.63 },
-    //    { "F", 349.23 }, { "G", 392.00 }, { "A", 440.00 }, { "B", 493.88 }
-    //};
-
-    //    const double buffer = 15;  // Error margin (Hz) for determining accidentals
-    //    string closestNote = null;
-    //    int alter = 0;
-    //    double closestFreq = double.MaxValue;
-
-    //    // Iterate over reference frequencies to find the closest note
-    //    foreach (var entry in referenceFrequencies)
-    //    {
-    //        double naturalFreq = entry.Value;
-    //        double diff = Math.Abs(frequency - naturalFreq);
-
-    //        if (diff < closestFreq)
-    //        {
-    //            closestNote = entry.Key;
-    //            closestFreq = diff;
-
-    //            // Determine if it's sharp or flat based on the buffer
-    //            if (frequency > naturalFreq + buffer)
-    //            {
-    //                alter = 1; // Sharp
-    //            }
-    //            else if (frequency < naturalFreq - buffer)
-    //            {
-    //                alter = -1; // Flat
-    //            }
-    //            else
-    //            {
-    //                alter = 0; // Natural
-    //            }
-    //        }
-    //    }
-
-    //    // You can also determine the octave based on the frequency range
-    //    int octave = DetermineOctave(frequency);
-
-    //    return (closestNote, octave, alter);
-    //}
-
-    //private int DetermineOctave(double frequency)
-    //{
-    //    // Logic to determine the octave based on the frequency
-    //    // For simplicity, we assume it's within the piano range
-    //    if (frequency <= 32.70 && frequency>0) return 0;   // C0
-    //    if (frequency <= 65.41 && frequency > 32.70) return 1;   // C1
-    //    if (frequency <= 130.81 && frequency>65.41) return 2;  // C2
-    //    if (frequency <= 261.63 && frequency >130.81) return 3;  // C3
-    //    if (frequency <= 523.25 && frequency > 261.63) return 4;  // C4
-    //    if (frequency <= 1046.50 && frequency > 523.25) return 5; // C5
-    //    if (frequency <= 2093.00 && frequency > 1046.5) return 6; // C6
-    //    if (frequency <= 4186.01 && frequency > 2093.0) return 7; // C7
-    //    return 8; // Default octave
-    //}
-
-    //public static Pitch MapNoteToPitch(string note, int octave)
-    //{
-    //    switch (note)
-    //    {
-    //        case "A": return Pitch.A.ToPitch(octave);
-    //        case "A#": return Pitch.ASharp.ToPitch(octave);
-    //        case "B": return Pitch.B.ToPitch(octave);
-    //        case "C": return Pitch.C.ToPitch(octave);
-    //        case "C#": return Pitch.CSharp.ToPitch(octave);
-    //        case "D": return Pitch.D.ToPitch(octave);
-    //        case "D#": return Pitch.DSharp.ToPitch(octave);
-    //        case "E": return Pitch.E.ToPitch(octave);
-    //        case "F": return Pitch.F.ToPitch(octave);
-    //        case "F#": return Pitch.FSharp.ToPitch(octave);
-    //        case "G": return Pitch.G.ToPitch(octave);
-    //        case "G#": return Pitch.GSharp.ToPitch(octave);
-    //        default: throw new ArgumentException("Invalid note name");
-    //    }
-    //}
+    
 }
 

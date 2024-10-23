@@ -9436,11 +9436,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\TestingMasuka.csproj",
+      "projectUniqueName": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\TestingMasuka.csproj",
       "projectName": "TestingMasuka",
-      "projectPath": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\TestingMasuka.csproj",
+      "projectPath": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\TestingMasuka.csproj",
       "packagesPath": "C:\\Users\\treya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\obj\\",
+      "outputPath": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

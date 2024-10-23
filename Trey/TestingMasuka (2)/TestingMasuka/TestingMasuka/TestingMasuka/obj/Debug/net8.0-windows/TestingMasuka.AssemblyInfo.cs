@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestingMasuka")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+132617718adc0adf643cba060aa9f7f960b93775")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestingMasuka")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestingMasuka")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
