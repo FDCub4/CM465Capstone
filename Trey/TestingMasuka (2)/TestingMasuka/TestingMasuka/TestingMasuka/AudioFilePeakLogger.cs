@@ -101,30 +101,18 @@ public class AudioFilePeakLogger
         if (peakFrequency > 0 && peakFrequency >= minPianoFrequency && peakFrequency <= maxPianoFrequency)
         {
             // Convert frequency to note and octave
-            var (note, octave) = FreqToNote(peakFrequency);
+            // var (note, octave) = FreqToNote(peakFrequency);
+
+            string logMessage = $"Timestamp: {currentTime:N2} sec, Peak Frequency: {peakFrequency:N2} Hz{Environment.NewLine}";
 
             // Log the peak frequency, note, octave, and timestamp
-            string logMessage = $"Timestamp: {currentTime:N2} sec, Peak Frequency: {peakFrequency:N2} Hz, Note: {note}, Octave: {octave}{Environment.NewLine}";
+            // string logMessage = $"Timestamp: {currentTime:N2} sec, Peak Frequency: {peakFrequency:N2} Hz, Note: {note}, Octave: {octave}{Environment.NewLine}";
 
             File.AppendAllText(logFilePath, logMessage);
         }
     }
 
-    static (string, int) FreqToNote(double freq)
-    {
-        string[] notes = { "A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#" };
-
-        // Calculate the note
-        double noteNumber = 12 * Math.Log2(freq / 440) + 49;
-        int roundedNoteNumber = (int)Math.Round(noteNumber);
-        int noteIndex = (roundedNoteNumber - 1) % notes.Length;
-        if (noteIndex < 0) noteIndex += notes.Length;  //negative modulo result fix
-
-        string note = notes[noteIndex];
-        int octave = (roundedNoteNumber + 8) / notes.Length;
-
-        return (note, octave);
-    }
+   
 
 
 
