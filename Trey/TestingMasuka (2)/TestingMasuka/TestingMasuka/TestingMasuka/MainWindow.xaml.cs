@@ -28,6 +28,8 @@ using ScottPlot.WPF;
 //using MathNet.Numerics;
 using System.Numerics;
 using Manufaktura.Controls.WPF;
+using System.Windows.Media;
+using System.Drawing;
 
 
 
@@ -43,7 +45,6 @@ namespace TestingMasuka
 
             var viewModel = new TestData();
             DataContext = viewModel;
-            btnRecord.Click += btnRecord_Click;
             
 
             //viewModel.LoadTestData();
@@ -75,37 +76,103 @@ namespace TestingMasuka
             }
         }
 
+        private BitmapSource GetPlotBitmap(WpfPlot plot)
+        {
+            RenderTargetBitmap renderTargetBitmap = new RenderTargetBitmap(
+                (int)plot.ActualWidth,
+                (int)plot.ActualHeight,
+                96d,
+                96d,
+                PixelFormats.Pbgra32);
+
+            renderTargetBitmap.Render(plot);
+            return renderTargetBitmap;
+        }
+        private Bitmap RenderNoteViewerToImage(NoteViewer noteViewer)
+        {
+
+            noteViewer.Measure(new System.Windows.Size(Double.PositiveInfinity, Double.PositiveInfinity));
+            noteViewer.Arrange(new Rect(0, 0, noteViewer.DesiredSize.Width, noteViewer.DesiredSize.Height));
+            noteViewer.UpdateLayout();
+
+
+            var renderBitmap = new RenderTargetBitmap(
+                (int)noteViewer.ActualWidth,
+                (int)noteViewer.ActualHeight,
+                96d,
+                96d,
+                System.Windows.Media.PixelFormats.Pbgra32);
+
+
+            renderBitmap.Render(noteViewer);
+
+
+            var bitmap = new System.Drawing.Bitmap(renderBitmap.PixelWidth, renderBitmap.PixelHeight);
+            var bitmapData = bitmap.LockBits(new System.Drawing.Rectangle(0, 0, bitmap.Width, bitmap.Height), System.Drawing.Imaging.ImageLockMode.WriteOnly, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            renderBitmap.CopyPixels(Int32Rect.Empty, bitmapData.Scan0, bitmapData.Stride * bitmapData.Height, bitmapData.Stride);
+            bitmap.UnlockBits(bitmapData);
+
+            return bitmap;
+        }
+
+
 
         private void btnExportPDF_click(object sender, RoutedEventArgs e)
         {
 
+            var noteViewer = NoteViewer1;
+            string notesOutput = noteViewer?.ScoreSource.ToString() ?? "No notes available";
+
+
+
+            Bitmap noteViewerImage = RenderNoteViewerToImage(noteViewer);
+
+
             PdfDocument document = new PdfDocument();
-            document.Info.Title = "Created with PDFsharp";
+            document.Info.Title = "Musical Notes PDF";
 
 
             PdfPage page = document.AddPage();
-
-
             XGraphics gfx = XGraphics.FromPdfPage(page);
-
-
             XFont font = new XFont("Verdana", 20);
 
 
-            gfx.DrawString(selectedMp3FilePath, font, XBrushes.Black,
-                new XRect(0, 0, page.Width, page.Height),
-            XStringFormats.Center);
 
 
 
-            string pdfFileName = Path.GetFileNameWithoutExtension(selectedMp3FilePath);
+            if (noteViewerImage != null)
+            {
+                using (MemoryStream stream = new MemoryStream())
+                {
+                    noteViewerImage.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                    stream.Position = 0;
+                    XImage xImage = XImage.FromStream(stream);
 
-            string filename = @$"C:\Users\treya\Downloads\{pdfFileName}.pdf";
+
+                    int originalWidth = noteViewerImage.Width;
+                    int originalHeight = noteViewerImage.Height;
+
+                    double aspectRatio = (double)originalHeight / originalWidth;
+
+
+                    double desiredWidth = page.Width;
+
+                    double desiredHeight = desiredWidth * aspectRatio;
+
+
+                    gfx.DrawImage(xImage, 0, 0, desiredWidth, desiredHeight);
+                }
+            }
+
+
+            string pdfFileName = "MusicalNotes.pdf";
+            string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), pdfFileName);
+
 
             try
             {
-                document.Save(filename);
-                MessageBox.Show($"PDF file '{filename}' has been created successfully!");
+                document.Save(filePath);
+                MessageBox.Show($"PDF file '{filePath}' has been created successfully!");
             }
             catch (Exception ex)
             {
@@ -131,11 +198,12 @@ namespace TestingMasuka
             MessageBox.Show("Redo clicked");
         }
 
-
-
         
+    
 
-        private void btnLoadFile_Click(object sender, RoutedEventArgs e)
+
+
+    private void btnLoadFile_Click(object sender, RoutedEventArgs e)
         {
             selectedMp3FilePath = LoadFiles();
 
@@ -152,7 +220,26 @@ namespace TestingMasuka
 
 
 
-        public void btnRecord_Click(object sender, RoutedEventArgs e)
+        
+
+        private void txtFileSelected_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
+        }
+
+        private void btnExit_click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnHelp_click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("This is an application that transcribes audio files into " +
+                "sheet music.  This application has the ability to save transcribed files into PDF " +
+                "forms, and allow for saving to personal devices.");
+        }
+
+        public void PlayAudio()
         {
             string nameOfMP3File = selectedMp3FilePath;
             if (string.IsNullOrEmpty(nameOfMP3File))
@@ -182,51 +269,25 @@ namespace TestingMasuka
                 MessageBox.Show("An error occured, please try a different file" + ex.Message);
             }
         }
+        
 
-        private void txtFileSelected_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        public void btnRecord_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void btnExit_click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnHelp_click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("This is an application that transcribes audio files into " +
-                "sheet music.  This application has the ability to save transcribed files into PDF " +
-                "forms, and allow for saving to personal devices.");
-        }
-
-
-       
-
-
-        //public void ConvertMp3ToFrequencies(string mp3FilePath)
-        //{
-
-        //    AudioFilePeakLogger readFile = new AudioFilePeakLogger(mp3FilePath);
-
-        //    readFile.ProcessFile(@"C:\Users\treya\Downloads\Capstone\TestingMasuka (2)\TestingMasuka\TestingMasuka\TestingMasuka\bin\Debug\net8.0-windows\frequencies.txt");
-        //    MessageBox.Show("Completed Processing");
-
-
-
-
-        //}
-
-        private void btnConvert_click(object sender, RoutedEventArgs e)
-        {
+            PlayAudio();
             ConvertMp3ToFrequencies(selectedMp3FilePath);
-        }
-
-        private void btnLoad_click(object sender, RoutedEventArgs e)
-        {
             var viewModel = (TestData)DataContext;
             viewModel.LoadTestData();
         }
+
+        //private void btnLoadNotes_click(object sender, RoutedEventArgs e)
+        //{
+        //    var viewModel = (TestData)DataContext;
+        //    viewModel.LoadTestData();
+        //}
+        //private void btnConvert_click(object sender, RoutedEventArgs e)
+        //{
+        //    ConvertMp3ToFrequencies(selectedMp3FilePath);
+        //}
 
 
         public void ConvertMp3ToFrequencies(string mp3FilePath)

@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka\\",
+  "WorkspaceRootPath": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\downloads\\capstone\\testingmasuka\\testingmasuka\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\onedrive\\documents\\github\\cm465capstone\\trey\\testingmasuka\\testingmasuka\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|solutionrelative:testingmasuka\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\downloads\\capstone\\testingmasuka\\testingmasuka\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\onedrive\\documents\\github\\cm465capstone\\trey\\testingmasuka\\testingmasuka\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|solutionrelative:testingmasuka\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\downloads\\capstone\\testingmasuka\\testingmasuka\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\onedrive\\documents\\github\\cm465capstone\\trey\\testingmasuka\\testingmasuka\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|solutionrelative:testingmasuka\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\downloads\\capstone\\testingmasuka\\testingmasuka\\testingmasuka.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\onedrive\\documents\\github\\cm465capstone\\trey\\testingmasuka\\testingmasuka\\testingmasuka.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|solutionrelative:testingmasuka\\testingmasuka.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\downloads\\capstone\\testingmasuka\\testingmasuka\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\onedrive\\documents\\github\\cm465capstone\\trey\\testingmasuka\\testingmasuka\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|solutionrelative:testingmasuka\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -30,70 +30,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka\\TestingMasuka\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka\\TestingMasuka\\App.xaml",
               "RelativeDocumentMoniker": "TestingMasuka\\App.xaml",
-              "ToolTip": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka\\TestingMasuka\\App.xaml",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka\\TestingMasuka\\App.xaml",
               "RelativeToolTip": "TestingMasuka\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-30T00:00:58.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T00:00:58.71Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "TestingMasuka.csproj",
-              "DocumentMoniker": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka\\TestingMasuka\\TestingMasuka.csproj",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka\\TestingMasuka\\TestingMasuka.csproj",
               "RelativeDocumentMoniker": "TestingMasuka\\TestingMasuka.csproj",
-              "ToolTip": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka\\TestingMasuka\\TestingMasuka.csproj",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka\\TestingMasuka\\TestingMasuka.csproj",
               "RelativeToolTip": "TestingMasuka\\TestingMasuka.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-30T00:00:54.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T00:00:54.665Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka\\TestingMasuka\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka\\TestingMasuka\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "TestingMasuka\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka\\TestingMasuka\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka\\TestingMasuka\\MainWindow.xaml.cs",
               "RelativeToolTip": "TestingMasuka\\MainWindow.xaml.cs",
               "ViewState": "AgIAABEBAAAAAAAAAAAjwG4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T20:58:45.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T20:58:45.774Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka\\TestingMasuka\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka\\TestingMasuka\\MainWindow.xaml",
               "RelativeDocumentMoniker": "TestingMasuka\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka\\TestingMasuka\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka\\TestingMasuka\\MainWindow.xaml",
               "RelativeToolTip": "TestingMasuka\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-30T03:40:54.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T03:40:54.431Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka\\TestingMasuka\\AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka\\TestingMasuka\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "TestingMasuka\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka\\TestingMasuka\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka\\TestingMasuka\\AssemblyInfo.cs",
               "RelativeToolTip": "TestingMasuka\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T20:59:05.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T20:59:05.64Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             }
           ]
         }

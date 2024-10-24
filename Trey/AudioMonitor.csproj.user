@@ -11,5 +11,8 @@
     <Compile Update="MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="TestingMasuka %282%29\TestingMasuka\TestingMasuka\TestingMasuka\AudioMonitorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

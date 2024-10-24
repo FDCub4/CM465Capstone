@@ -54,8 +54,8 @@
         </StackPanel>
         <Button x:Name="btnLoadFile" Grid.Column="1" Content="Load File" HorizontalAlignment="Left" Margin="145,136,0,0" VerticalAlignment="Top" Click="btnLoadFile_Click"/>
         <TextBox x:Name="txtFileSelected" Grid.Column="1" HorizontalAlignment="Left" Margin="287,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtFileSelected_TextChanged"/>
-        <Image x:Name="imgLogo" Grid.Column="1" HorizontalAlignment="Left" Height="139" Margin="921,37,0,0" VerticalAlignment="Top" Width="125" Source="/pngAudioTranscriber.png" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnConvert" Grid.Column="1" Content="Convert To Text" HorizontalAlignment="Left" Margin="476,130,0,0" VerticalAlignment="Top" Click="btnConvert_click"/>
-        <Button x:Name ="btnLoad" Grid.Column="1" Content="Load Notes" HorizontalAlignment="Left" Margin="138,199,0,0" VerticalAlignment="Top"  Click="btnLoad_click"/>
+        <Image x:Name="imgLogo" Grid.Column="1" HorizontalAlignment="Left" Height="269" Margin="827,37,0,0" VerticalAlignment="Top" Width="219" Source="/pngAudioTranscriber.png" Grid.ColumnSpan="2"/>
+        <!--Button x:Name="btnConvert" Grid.Column="1" Content="Convert To Text" HorizontalAlignment="Left" Margin="476,130,0,0" VerticalAlignment="Top" Click="btnConvert_click"/>-->
+        <!--Button x:Name ="btnLoad" Grid.Column="1" Content="Load Notes" HorizontalAlignment="Left" Margin="138,199,0,0" VerticalAlignment="Top"  Click="btnLoadNotes_click"/>-->
     </Grid>
 </Window>

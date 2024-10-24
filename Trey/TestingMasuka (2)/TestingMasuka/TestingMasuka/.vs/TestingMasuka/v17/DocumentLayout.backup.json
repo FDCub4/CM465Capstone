@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\onedrive\\documents\\github\\cm465capstone\\trey\\testingmasuka (2)\\testingmasuka\\testingmasuka\\testingmasuka\\audiofilepeaklogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|solutionrelative:testingmasuka\\audiofilepeaklogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\onedrive\\documents\\github\\cm465capstone\\trey\\testingmasuka (2)\\testingmasuka\\testingmasuka\\testingmasuka\\testdataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|solutionrelative:testingmasuka\\testdataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,11 +15,39 @@
       "RelativeMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|solutionrelative:testingmasuka\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\treya\\AppData\\Local\\Temp\\.vsdbgsrc\\4e84e9c1b897922ccadfa3d049ee2108391400103aa40bdcaa19e6141186a46e\\UIElement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\testingmasuka\\audiomonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|solutionrelative:testingmasuka\\audiomonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\project.nuget.cache||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\project.assets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\AudioMonitor.csproj.nuget.g.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\AudioMonitor.csproj.nuget.g.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\AudioMonitor.csproj.nuget.dgspec.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\screenshot2.gif||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\screenshot.gif||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\onedrive\\documents\\github\\cm465capstone\\trey\\testingmasuka (2)\\testingmasuka\\testingmasuka\\testingmasuka\\audiofilepeaklogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|solutionrelative:testingmasuka\\audiofilepeaklogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\treya\\AppData\\Local\\Temp\\.vsdbgsrc\\4e84e9c1b897922ccadfa3d049ee2108391400103aa40bdcaa19e6141186a46e\\UIElement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC3068C0-5705-455C-9C67-308CF2B6EC2D}|TestingMasuka\\TestingMasuka.csproj|c:\\users\\treya\\onedrive\\documents\\github\\cm465capstone\\trey\\testingmasuka (2)\\testingmasuka\\testingmasuka\\testingmasuka\\files.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,7 +81,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,18 +93,114 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AudioMonitorForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\AudioMonitorForm.cs",
-              "RelativeDocumentMoniker": "TestingMasuka\\AudioMonitorForm.cs",
-              "ToolTip": "C:\\Users\\treya\\Downloads\\Capstone\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\AudioMonitorForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Downloads\\Capstone\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\AudioMonitorForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T03:14:51.742Z"
+              "DocumentIndex": 4,
+              "Title": "project.nuget.cache",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\project.nuget.cache",
+              "RelativeDocumentMoniker": "..\\..\\..\\obj\\project.nuget.cache",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\project.nuget.cache",
+              "RelativeToolTip": "..\\..\\..\\obj\\project.nuget.cache",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002368|",
+              "WhenOpened": "2024-10-23T18:45:58.35Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "project.assets.json",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\project.assets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\obj\\project.assets.json",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\project.assets.json",
+              "RelativeToolTip": "..\\..\\..\\obj\\project.assets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-23T18:45:58.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AudioMonitor.csproj.nuget.g.targets",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\AudioMonitor.csproj.nuget.g.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\obj\\AudioMonitor.csproj.nuget.g.targets",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\AudioMonitor.csproj.nuget.g.targets",
+              "RelativeToolTip": "..\\..\\..\\obj\\AudioMonitor.csproj.nuget.g.targets",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-10-23T18:45:57.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AudioMonitor.csproj.nuget.g.props",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\AudioMonitor.csproj.nuget.g.props",
+              "RelativeDocumentMoniker": "..\\..\\..\\obj\\AudioMonitor.csproj.nuget.g.props",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\AudioMonitor.csproj.nuget.g.props",
+              "RelativeToolTip": "..\\..\\..\\obj\\AudioMonitor.csproj.nuget.g.props",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-10-23T18:45:57.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AudioMonitor.csproj.nuget.dgspec.json",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\AudioMonitor.csproj.nuget.dgspec.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\obj\\AudioMonitor.csproj.nuget.dgspec.json",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\AudioMonitor.csproj.nuget.dgspec.json",
+              "RelativeToolTip": "..\\..\\..\\obj\\AudioMonitor.csproj.nuget.dgspec.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-23T18:45:56.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "screenshot2.gif",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\screenshot2.gif",
+              "RelativeDocumentMoniker": "..\\..\\..\\screenshot2.gif",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\screenshot2.gif",
+              "RelativeToolTip": "..\\..\\..\\screenshot2.gif",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-10-23T18:45:56.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "screenshot.gif",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\screenshot.gif",
+              "RelativeDocumentMoniker": "..\\..\\..\\screenshot.gif",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\screenshot.gif",
+              "RelativeToolTip": "..\\..\\..\\screenshot.gif",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-10-23T18:45:53.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Program.cs",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T18:44:59.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AudioMonitorForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\AudioMonitorForm.cs",
+              "RelativeDocumentMoniker": "TestingMasuka\\AudioMonitorForm.cs",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\AudioMonitorForm.cs [Design]",
+              "RelativeToolTip": "TestingMasuka\\AudioMonitorForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T03:14:51.742Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "UIElement.cs",
               "DocumentMoniker": "C:\\Users\\treya\\AppData\\Local\\Temp\\.vsdbgsrc\\4e84e9c1b897922ccadfa3d049ee2108391400103aa40bdcaa19e6141186a46e\\UIElement.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\4e84e9c1b897922ccadfa3d049ee2108391400103aa40bdcaa19e6141186a46e\\UIElement.cs",
@@ -93,20 +213,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TestDataViewModel.cs",
               "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\TestDataViewModel.cs",
               "RelativeDocumentMoniker": "TestingMasuka\\TestDataViewModel.cs",
-              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\TestDataViewModel.cs",
-              "RelativeToolTip": "TestingMasuka\\TestDataViewModel.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAYwAUBAAAEAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\TestDataViewModel.cs*",
+              "RelativeToolTip": "TestingMasuka\\TestDataViewModel.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T02:49:28.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "AudioMonitorForm.cs",
               "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\AudioMonitorForm.cs",
               "RelativeDocumentMoniker": "TestingMasuka\\AudioMonitorForm.cs",
@@ -118,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Files.cs",
               "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\Files.cs",
               "RelativeDocumentMoniker": "TestingMasuka\\Files.cs",
@@ -130,31 +250,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "AudioFilePeakLogger.cs",
               "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\AudioFilePeakLogger.cs",
               "RelativeDocumentMoniker": "TestingMasuka\\AudioFilePeakLogger.cs",
-              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\AudioFilePeakLogger.cs*",
-              "RelativeToolTip": "TestingMasuka\\AudioFilePeakLogger.cs*",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAgwGwAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\AudioFilePeakLogger.cs",
+              "RelativeToolTip": "TestingMasuka\\AudioFilePeakLogger.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAgwHIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:53:07.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T15:53:07.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\MainWindow.xaml",
               "RelativeDocumentMoniker": "TestingMasuka\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\MainWindow.xaml",
               "RelativeToolTip": "TestingMasuka\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-30T03:40:54.431Z"
+              "WhenOpened": "2024-09-30T03:40:54.431Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "MainWindow.g.i.cs",
               "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
               "RelativeDocumentMoniker": "TestingMasuka\\obj\\Debug\\net8.0-windows\\MainWindow.g.i.cs",
@@ -166,18 +286,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\App.xaml",
               "RelativeDocumentMoniker": "TestingMasuka\\App.xaml",
               "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\App.xaml",
               "RelativeToolTip": "TestingMasuka\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-30T00:00:58.71Z"
+              "WhenOpened": "2024-09-30T00:00:58.71Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "TestingMasuka.csproj",
               "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\TestingMasuka.csproj",
               "RelativeDocumentMoniker": "TestingMasuka\\TestingMasuka.csproj",
@@ -189,19 +310,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "TestingMasuka\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\MainWindow.xaml.cs",
               "RelativeToolTip": "TestingMasuka\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAkwOQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowHQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T20:58:45.774Z"
+              "WhenOpened": "2024-09-15T20:58:45.774Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\TestingMasuka (2)\\TestingMasuka\\TestingMasuka\\TestingMasuka\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "TestingMasuka\\AssemblyInfo.cs",

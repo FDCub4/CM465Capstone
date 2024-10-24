@@ -668,23 +668,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fdcub\\.nuget\\packages\\": {},
+    "C:\\Users\\treya\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\AudioMonitor.csproj",
+      "projectUniqueName": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\AudioMonitor.csproj",
       "projectName": "AudioMonitor",
-      "projectPath": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\AudioMonitor.csproj",
-      "packagesPath": "C:\\Users\\fdcub\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fdcub\\Downloads\\AudioMonitor\\AudioMonitor\\AudioMonitor\\obj\\",
+      "projectPath": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\AudioMonitor.csproj",
+      "packagesPath": "C:\\Users\\treya\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\treya\\OneDrive\\Documents\\GitHub\\CM465Capstone\\Trey\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\fdcub\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\treya\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -745,6 +745,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

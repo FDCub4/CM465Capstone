@@ -30,7 +30,7 @@ public class TestData : ViewModel
 
         // Define constants and variables
         string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "frequencies.txt");
-        const int maxNotesPerStaff = 15;  // Max notes before creating a new staff
+        const int maxNotesPerStaff = 20;  // Max notes before creating a new staff
         const double minPianoFrequency = 27.5;  // A0
         const double maxPianoFrequency = 4186.0; // C8
         int totalNotes = 0;
@@ -47,8 +47,9 @@ public class TestData : ViewModel
                 currentStaff.Elements.Add(Clef.Treble);
                 currentStaff.Elements.Add(new Manufaktura.Controls.Model.Key(0));
                 score.Staves.Add(currentStaff);
+                
 
-                while ((line = sr.ReadLine()) != null && totalNotes < 40)  // Limit total notes
+                while ((line = sr.ReadLine()) != null && totalNotes < 50)  // Limit total notes
                 {
                     var parts = line.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
@@ -189,7 +190,7 @@ public class TestData : ViewModel
     }
 
 
-
+    
 
 
     //var score = Score.CreateOneStaffScore(Clef.Treble, new MajorScale(Step.C, false));
