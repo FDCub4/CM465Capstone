@@ -30,23 +30,36 @@ public class AudioFilePeakLogger
         FftValues = new double[fftMag.Length];
     }
 
-    public void ProcessFile(string outputLogFile)
+    public void ProcessFile(string outputLogFile, IProgress<int> progress)
     {
-        using var reader = new AudioFileReader(Filepath);
-        string logFilePath = outputLogFile;
+        
+            using var reader = new AudioFileReader(Filepath);
+            string logFilePath = outputLogFile;
 
-        // Process the audio file in chunks
-        byte[] buffer = new byte[AudioValues.Length * bytesPerSample]; // buffer size based on the chunk size
-        int bytesRead;
-        int sampleIndex = 0;
+            // Calculate total bytes to read
+            long totalBytes = reader.Length;
+            long bytesProcessed = 0;
 
-        while ((bytesRead = reader.Read(buffer, 0, buffer.Length)) > 0)
-        {
-            int bufferSampleCount = bytesRead / bytesPerSample;
-            ProcessChunk(buffer, bufferSampleCount, sampleIndex, logFilePath);
-            sampleIndex += bufferSampleCount;
+            byte[] buffer = new byte[AudioValues.Length * bytesPerSample]; // Buffer size based on the chunk size
+            int bytesRead;
+            int sampleIndex = 0;
+
+            while ((bytesRead = reader.Read(buffer, 0, buffer.Length)) > 0)
+            {
+                int bufferSampleCount = bytesRead / bytesPerSample;
+                ProcessChunk(buffer, bufferSampleCount, sampleIndex, logFilePath);
+                sampleIndex += bufferSampleCount;
+
+                // Update bytes processed
+                bytesProcessed += bytesRead;
+
+                // Calculate and report progress as a percentage
+                int percentComplete = (int)((double)bytesProcessed / totalBytes * 100);
+                progress?.Report(percentComplete);
+            }
         }
-    }
+
+    
 
     private void ProcessChunk(byte[] buffer, int bufferSampleCount, int sampleIndex, string logFilePath)
     {

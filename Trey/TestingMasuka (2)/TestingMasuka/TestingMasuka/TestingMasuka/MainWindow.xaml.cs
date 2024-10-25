@@ -239,45 +239,21 @@ namespace TestingMasuka
                 "forms, and allow for saving to personal devices.");
         }
 
-        public void PlayAudio()
-        {
-            string nameOfMP3File = selectedMp3FilePath;
-            if (string.IsNullOrEmpty(nameOfMP3File))
-            {
-                MessageBox.Show("Please enter a valid mp3 file location");
-                return;
-            }
-            try
-            {
-                using (var audioFile = new AudioFileReader(nameOfMP3File))
-                {
-                    using (var outputDevice = new WaveOutEvent())
-                    {
-                        outputDevice.Init(audioFile);
-                        outputDevice.Play();
-
-                        MessageBox.Show("File is playing, press any key to stop.");
-                        Console.ReadKey();
-
-                        outputDevice.Stop();
-                    }
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("An error occured, please try a different file" + ex.Message);
-            }
-        }
         
 
-        public void btnRecord_Click(object sender, RoutedEventArgs e)
+
+        public async void btnRecord_Click(object sender, RoutedEventArgs e)
         {
             PlayAudio();
-            ConvertMp3ToFrequencies(selectedMp3FilePath);
+
+            // Await the asynchronous conversion process
+            await ConvertMp3ToFrequencies(selectedMp3FilePath);
+
+            // Load test data after processing is complete
             var viewModel = (TestData)DataContext;
             viewModel.LoadTestData();
         }
+
 
         //private void btnLoadNotes_click(object sender, RoutedEventArgs e)
         //{
@@ -290,15 +266,20 @@ namespace TestingMasuka
         //}
 
 
-        public void ConvertMp3ToFrequencies(string mp3FilePath)
+        public async Task ConvertMp3ToFrequencies(string mp3FilePath)
         {
+            var progress = new Progress<int>(value =>
+            {
+                LoadingProgressBar.Value = value; // Update progress bar value
+            });
 
             AudioFilePeakLogger readFile = new AudioFilePeakLogger(mp3FilePath);
 
-            readFile.ProcessFile(@"C:\Users\treya\Downloads\Capstone\TestingMasuka (2)\TestingMasuka\TestingMasuka\TestingMasuka\bin\Debug\net8.0-windows\frequencies.txt");
-            MessageBox.Show("Completed Processing");
+            await Task.Run(() => readFile.ProcessFile(@"C:\Users\treya\OneDrive\Documents\GitHub\CM465Capstone\Trey\TestingMasuka (2)\TestingMasuka\TestingMasuka\TestingMasuka\bin\Debug\net8.0-windows\frequencies.txt", progress));
 
+            MessageBox.Show("Completed Processing");
         }
+
         private string LoadFiles()
         {
             Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog
@@ -318,6 +299,42 @@ namespace TestingMasuka
             }
 
             return null;
+        }
+
+
+        private IWavePlayer outputDevice; // Class-level variable to hold the output device
+
+        public void PlayAudio()
+        {
+            string nameOfMP3File = selectedMp3FilePath;
+            if (string.IsNullOrEmpty(nameOfMP3File))
+            {
+                MessageBox.Show("Please enter a valid mp3 file location");
+                return;
+            }
+            try
+            {
+                using (var audioFile = new AudioFileReader(nameOfMP3File))
+                {
+                    outputDevice = new WaveOutEvent();
+                    outputDevice.Init(audioFile);
+                    outputDevice.Play();
+                    MessageBox.Show("File is playing. Click 'Stop' to stop playback.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred, please try a different file: " + ex.Message);
+            }
+        }
+
+        private void btnStopPlayingAudio_Click(object sender, RoutedEventArgs e)
+        {
+            if (outputDevice != null && outputDevice.PlaybackState == PlaybackState.Playing)
+            {
+                outputDevice.Stop();
+                MessageBox.Show("Playback stopped.");
+            }
         }
     }
 

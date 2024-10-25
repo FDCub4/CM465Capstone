@@ -9,6 +9,9 @@ using MathNet.Numerics.Distributions;
 using static System.Formats.Asn1.AsnWriter;
 using System.Reactive;
 using System.Windows.Navigation;
+using Manufaktura.Controls.Extensions;
+using Manufaktura.Controls.Parser;
+using System.Xml.Linq;
 
 public class TestData : ViewModel
 {
@@ -44,9 +47,11 @@ public class TestData : ViewModel
 
                 // Create the first staff
                 var currentStaff = new Staff();
+                var secondStaff = new Staff();
                 currentStaff.Elements.Add(Clef.Treble);
                 currentStaff.Elements.Add(new Manufaktura.Controls.Model.Key(0));
                 score.Staves.Add(currentStaff);
+                score.Staves.Add(secondStaff);
                 
 
                 while ((line = sr.ReadLine()) != null && totalNotes < 50)  // Limit total notes
@@ -74,11 +79,15 @@ public class TestData : ViewModel
                         // Create and add note to the staff
                         RhythmicDuration rhythmicDuration = ConvertToRhythmicDuration(timeDifference);
                         currentStaff.Elements.Add(new Note(FrequencyDetermined(peakFrequency), rhythmicDuration));
+                        //changes made here
+
                         totalNotes++;
 
                         // Add barline after every 4 notes
-                        if (totalNotes % 4 == 0)
-                            currentStaff.AddBarline();
+                        //if (totalNotes % 4 == 0)
+                        //    currentStaff.AddBarline();
+                       
+                        secondStaff.Elements.Add(new Note(Pitch.A4, RhythmicDuration.Whole));
 
                         // If max notes per staff are reached, create a new staff
                         //if (totalNotes % maxNotesPerStaff == 0)
