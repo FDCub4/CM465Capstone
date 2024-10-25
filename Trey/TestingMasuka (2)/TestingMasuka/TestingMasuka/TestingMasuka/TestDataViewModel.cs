@@ -12,6 +12,7 @@ using System.Windows.Navigation;
 using Manufaktura.Controls.Extensions;
 using Manufaktura.Controls.Parser;
 using System.Xml.Linq;
+using System.Threading.Tasks.Sources;
 
 public class TestData : ViewModel
 {
@@ -38,6 +39,8 @@ public class TestData : ViewModel
         const double maxPianoFrequency = 4186.0; // C8
         int totalNotes = 0;
         double lastTimestamp = 0.0;
+        int notesPerStaff = 40;
+        int currentStaffIndex = 0;
 
         try
         {
@@ -46,58 +49,78 @@ public class TestData : ViewModel
                 string line;
 
                 // Create the first staff
-                var currentStaff = new Staff();
+                var firstStaff = new Staff();
                 var secondStaff = new Staff();
-                currentStaff.Elements.Add(Clef.Treble);
-                currentStaff.Elements.Add(new Manufaktura.Controls.Model.Key(0));
-                score.Staves.Add(currentStaff);
-                score.Staves.Add(secondStaff);
-                
+                var thirdStaff = new Staff();
+                var fourthStaff = new Staff();
+                var fifthStaff = new Staff();
+                var sixthStaff = new Staff();   
+                var seventhStaff = new Staff();
+                var eighthStaff = new Staff();
+                var ninethStaff = new Staff();
 
-                while ((line = sr.ReadLine()) != null && totalNotes < 50)  // Limit total notes
+                Staff[] staffsArray = { firstStaff, secondStaff, thirdStaff, fourthStaff,fifthStaff, sixthStaff, seventhStaff, eighthStaff, ninethStaff };
+
+                for(int i=0; i<staffsArray.Length; i++)
                 {
-                    var parts = line.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                    staffsArray[i].Elements.Add(Clef.Treble);
+                    staffsArray[i].Elements.Add(new Manufaktura.Controls.Model.Key(0));
+                    score.Staves.Add(staffsArray[i]);
+                }
 
-                    if (parts.Length >= 8 &&
-                        parts[0].Trim() == "Timestamp:" &&
+
+                while ((line = sr.ReadLine()) != null && totalNotes < 100)  // Limit total notes
+                {
+                    var parts = line.Split(new[] { ':', ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
+
+                    if (parts.Length >= 6 &&
+                        parts[0].Trim() == "Timestamp" &&
                         double.TryParse(parts[1], out double timestamp) &&  // Extract timestamp
                         parts[2].Trim() == "sec" &&
                         parts[3].Trim() == "Peak" &&
-                        parts[4].Trim() == "Frequency:" &&
-                        double.TryParse(parts[5].Replace(",", "").Trim(), out double peakFrequency)) // Extract frequency
+                        parts[4].Trim() == "Frequency" &&
+                        double.TryParse(parts[5].Replace("Hz", "").Trim(), out double peakFrequency)) // Extract frequency
                     {
-                        //if (peakFrequency < minPianoFrequency || peakFrequency > maxPianoFrequency)
-                        //    continue; // Skip out-of-range frequencies
+                        if (peakFrequency < minPianoFrequency || peakFrequency > maxPianoFrequency)
+                            continue; // Skip out-of-range frequencies
 
                         double timeDifference = timestamp - lastTimestamp;
                         lastTimestamp = timestamp;
                         if (timeDifference > 2.0)
                             timeDifference = 2.0;
 
-                        // Get the note, octave, and accidental alteration
-                        
-                        // Create and add note to the staff
-                        RhythmicDuration rhythmicDuration = ConvertToRhythmicDuration(timeDifference);
-                        currentStaff.Elements.Add(new Note(FrequencyDetermined(peakFrequency), rhythmicDuration));
-                        //changes made here
+                        // Add further processing here for the note creation and staff management
+                    
+                
 
-                        totalNotes++;
 
-                        // Add barline after every 4 notes
-                        //if (totalNotes % 4 == 0)
-                        //    currentStaff.AddBarline();
-                       
-                        secondStaff.Elements.Add(new Note(Pitch.A4, RhythmicDuration.Whole));
 
-                        // If max notes per staff are reached, create a new staff
-                        //if (totalNotes % maxNotesPerStaff == 0)
-                        //{
-                        //    currentStaff = new Staff();
-                        //    currentStaff.Elements.Add(Clef.Treble);
-                        //    currentStaff.Elements.Add(new Manufaktura.Controls.Model.Key(0));
-                        //    score.Staves.Add(currentStaff); // Add new staff to the score
-                        //}
-                        //changes worked
+                RhythmicDuration rhythmicDuration = ConvertToRhythmicDuration(timeDifference);
+
+                        //staffsArray[currentStaffIndex].Elements.Add(new Note(FrequencyDetermined(peakFrequency), rhythmicDuration));
+
+
+                        //totalNotes++;
+                        if (totalNotes < 100)
+                        {
+                            staffsArray[currentStaffIndex].Elements.Add(new Note(FrequencyDetermined(peakFrequency), rhythmicDuration));
+                            totalNotes++;
+
+                            // Check if we need to switch to the next staff, but only if we're still within the note limit
+                            if (totalNotes < 100 && totalNotes % notesPerStaff == 0 && currentStaffIndex < staffsArray.Length - 1)
+                            {
+                                currentStaffIndex++; // Move to the next staff
+                            }
+                        }
+
+                    }
+                    
+                }
+                foreach (var staff in staffsArray)
+                {
+                    if (staff.Elements.Count <= 2) // Only add non-empty staffs
+                    {
+                        score.Staves.Remove(staff);
                     }
                 }
 

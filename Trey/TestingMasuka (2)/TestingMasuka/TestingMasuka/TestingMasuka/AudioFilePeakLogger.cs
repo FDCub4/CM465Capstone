@@ -32,11 +32,10 @@ public class AudioFilePeakLogger
 
     public void ProcessFile(string outputLogFile, IProgress<int> progress)
     {
-        
+            File.WriteAllText(outputLogFile, string.Empty);
             using var reader = new AudioFileReader(Filepath);
             string logFilePath = outputLogFile;
 
-            // Calculate total bytes to read
             long totalBytes = reader.Length;
             long bytesProcessed = 0;
 
@@ -50,10 +49,8 @@ public class AudioFilePeakLogger
                 ProcessChunk(buffer, bufferSampleCount, sampleIndex, logFilePath);
                 sampleIndex += bufferSampleCount;
 
-                // Update bytes processed
                 bytesProcessed += bytesRead;
 
-                // Calculate and report progress as a percentage
                 int percentComplete = (int)((double)bytesProcessed / totalBytes * 100);
                 progress?.Report(percentComplete);
             }
@@ -63,7 +60,7 @@ public class AudioFilePeakLogger
 
     private void ProcessChunk(byte[] buffer, int bufferSampleCount, int sampleIndex, string logFilePath)
     {
-        // Convert the buffer data into AudioValues
+
         if (waveFormat.Encoding == WaveFormatEncoding.Pcm)
         {
             if (bytesPerSample == 2) // 16-bit PCM
@@ -87,12 +84,10 @@ public class AudioFilePeakLogger
             throw new NotSupportedException(waveFormat.ToString());
         }
 
-        // Perform FFT
         double[] paddedAudio = FftSharp.Pad.ZeroPad(AudioValues);
         double[] fftMag = FftSharp.Transform.FFTmagnitude(paddedAudio);
         Array.Copy(fftMag, FftValues, fftMag.Length);
 
-        // Find the peak frequency
         int peakIndex = 0;
         for (int i = 0; i < fftMag.Length; i++)
         {
@@ -103,14 +98,11 @@ public class AudioFilePeakLogger
         double fftPeriod = FftSharp.Transform.FFTfreqPeriod(sampleRate, fftMag.Length);
         double peakFrequency = fftPeriod * peakIndex;
 
-        // Calculate the time in the audio file
         double currentTime = (double)sampleIndex / sampleRate;
 
-        // Define piano frequency range
         const double minPianoFrequency = 27.5;  // A0
         const double maxPianoFrequency = 4186.0; // C8
 
-        // Only log if the frequency is within the piano range
         if (peakFrequency > 0 && peakFrequency >= minPianoFrequency && peakFrequency <= maxPianoFrequency)
         {
             // Convert frequency to note and octave
@@ -124,8 +116,9 @@ public class AudioFilePeakLogger
             File.AppendAllText(logFilePath, logMessage);
         }
     }
+    
 
-   
+
 
 
 
