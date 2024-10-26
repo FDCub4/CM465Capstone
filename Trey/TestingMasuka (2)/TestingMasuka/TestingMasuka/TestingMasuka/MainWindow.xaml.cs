@@ -222,10 +222,7 @@ namespace TestingMasuka
 
         
 
-        private void txtFileSelected_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-
-        }
+        
 
         private void btnExit_click(object sender, RoutedEventArgs e)
         {
