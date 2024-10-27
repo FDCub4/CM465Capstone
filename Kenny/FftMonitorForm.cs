@@ -16,6 +16,10 @@ public partial class FftMonitorForm : Form
         AudioDevice = audioDevice;
         WaveFormat fmt = audioDevice.WaveFormat;
 
+        // Clear the log file at the start of the program
+        string logFilePath = "frequencies.txt";
+        File.WriteAllText(logFilePath, string.Empty); // Clears the file
+
         AudioValues = new double[fmt.SampleRate / 10];
         double[] paddedAudio = FftSharp.Pad.ZeroPad(AudioValues);
         double[] fftMag = FftSharp.Transform.FFTpower(paddedAudio);
@@ -80,74 +84,40 @@ public partial class FftMonitorForm : Form
         double[] fftMag = FftSharp.Transform.FFTmagnitude(paddedAudio);
         Array.Copy(fftMag, FftValues, fftMag.Length);
 
-        // find the frequency peak
-        int peakIndex = 0;
-        for (int i = 0; i < fftMag.Length; i++)
-        {
-            if (fftMag[i] > fftMag[peakIndex])
-                peakIndex = i;
-        }
-        double fftPeriod = FftSharp.Transform.FFTfreqPeriod(AudioDevice.WaveFormat.SampleRate, fftMag.Length);
-        double peakFrequency = fftPeriod * peakIndex;
+        // Get the peak frequency using doFFT
+        double peakFrequency = doFFT();
 
-
-        var (note, octave) = FreqToNote(peakFrequency);
-
-
+        // Log the peak frequency to a file
         string logFilePath = "frequencies.txt";
+        string logMessage = $"Peak Frequency: {peakFrequency:N2} Hz, at {DateTime.Now}{Environment.NewLine}";
 
-        string logMessage = $"Peak Frequency: {peakFrequency:N2} Hz, Note: {note}, Octave: {octave}, at {DateTime.Now}{Environment.NewLine}";
-        File.AppendAllText(logFilePath, logMessage);  // Write the log message with note and octave
+        // Use async file writing to avoid UI blocking
+        Task.Run(() => File.AppendAllText(logFilePath, logMessage));
 
+        // Update UI
         label1.Text = $"Peak Frequency: {peakFrequency:N0} Hz";
 
-
-        // request a redraw using a non-blocking render queue
+        // Request a non-blocking UI redraw
         formsPlot1.RefreshRequest();
     }
 
-    //Use this method to return the frequency, note, and octave
-    public (double, string, int) doFFT()
+    // Optimized FFT calculation method
+    public double doFFT()
     {
+        // Zero pad the audio values
         double[] paddedAudio = FftSharp.Pad.ZeroPad(AudioValues);
-        double[] fftMag = FftSharp.Transform.FFTmagnitude(paddedAudio);
-        Array.Copy(fftMag, FftValues, fftMag.Length);
 
-        // find the frequency peak
-        int peakIndex = 0;
-        for (int i = 0; i < fftMag.Length; i++)
-        {
-            if (fftMag[i] > fftMag[peakIndex])
-                peakIndex = i;
-        }
+        // Perform FFT and get the magnitude spectrum
+        double[] fftMag = FftSharp.Transform.FFTmagnitude(paddedAudio);
+
+        // Find the peak index in one line using LINQ
+        int peakIndex = Array.IndexOf(fftMag, fftMag.Max());
+
+        // Calculate the frequency corresponding to the peak
         double fftPeriod = FftSharp.Transform.FFTfreqPeriod(AudioDevice.WaveFormat.SampleRate, fftMag.Length);
         double peakFrequency = fftPeriod * peakIndex;
 
-
-        var (note, octave) = FreqToNote(peakFrequency);
-
-        return (peakFrequency, note, octave);
-    }
-
-    static (string, int) FreqToNote(double freq)
-    {
-        string[] notes = { "A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#" };
-
-        // Calculate the note number
-        double noteNumber = 12 * Math.Log2(freq / 440) + 49;
-        int roundedNoteNumber = (int)Math.Round(noteNumber);
-
-        // Ensure noteIndex is within the bounds of the array
-        int noteIndex = (roundedNoteNumber - 1) % notes.Length;
-        if (noteIndex < 0)
-            noteIndex += notes.Length;  // Fix for negative modulo result
-
-        string note = notes[noteIndex];
-
-        // Determine the octave
-        int octave = (roundedNoteNumber + 8) / notes.Length;
-
-        return (note, octave);
+        return peakFrequency;
     }
 
 }
