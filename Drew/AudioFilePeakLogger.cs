@@ -12,21 +12,23 @@ namespace AudioMonitor
         readonly WaveFormat waveFormat;
 
         readonly string Filepath = "";
-        
-        public AudioFilePeakLogger(string filePath)
+        readonly double volumeThreshold;  // New field for the volume threshold
+
+        public AudioFilePeakLogger(string filePath, double threshold = 0.265)  // Default threshold value
         {
-            // Read the audio file
+            // Initialize the file path and threshold
             Filepath = filePath;
+            volumeThreshold = threshold;
+
+            // Read the wave format
             using var reader = new AudioFileReader(Filepath);
             waveFormat = reader.WaveFormat;
             sampleRate = waveFormat.SampleRate;
             bytesPerSample = waveFormat.BitsPerSample / 8;
 
-            //Prep work for processing using FFT
+            // Prepare empty audio value array for later use
             AudioValues = new double[sampleRate / 100];  // 100ms chunks
-            double[] paddedAudio = FftSharp.Pad.ZeroPad(AudioValues);
-            double[] fftMag = FftSharp.Transform.FFTpower(paddedAudio);
-            FftValues = new double[fftMag.Length];
+            FftValues = new double[AudioValues.Length];  // FFT result
         }
 
         public void ProcessFile(string outputLogFile)
@@ -70,10 +72,10 @@ namespace AudioMonitor
             }
             else
             {
-                throw new NotSupportedException(waveFormat.ToString());
+                throw new NotSupportedException($"Encoding {waveFormat.Encoding} is not supported.");
             }
 
-            // Perform FFT
+            // Perform FFT on filled AudioValues
             double[] paddedAudio = FftSharp.Pad.ZeroPad(AudioValues);
             double[] fftMag = FftSharp.Transform.FFTmagnitude(paddedAudio);
             Array.Copy(fftMag, FftValues, fftMag.Length);
@@ -82,26 +84,22 @@ namespace AudioMonitor
             int peakIndex = 0;
             for (int i = 0; i < fftMag.Length; i++)
             {
-                if (fftMag[i] > fftMag[peakIndex])
+                if (fftMag[i] > fftMag[peakIndex] && fftMag[i] > volumeThreshold)
                     peakIndex = i;
             }
 
             double fftPeriod = FftSharp.Transform.FFTfreqPeriod(sampleRate, fftMag.Length);
             double peakFrequency = fftPeriod * peakIndex;
 
-            // Calculate the time in the audio file
             double currentTime = (double)sampleIndex / sampleRate;
 
-            // Convert frequency to note and octave
-            var (note, octave) = FreqToNote(peakFrequency);
-
-            // Log the peak frequency, note, octave, and timestamp
             if (peakFrequency > 0)
             {
+                var (note, octave) = FreqToNote(peakFrequency);
+
                 string logMessage = $"Timestamp: {currentTime:N2} sec, Peak Frequency: {peakFrequency:N2} Hz, Note: {note}, Octave: {octave}{Environment.NewLine}";
                 File.AppendAllText(logFilePath, logMessage);
             }
-
         }
 
         static (string, int) FreqToNote(double freq)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AudioMonitor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4195c7361f88c7130ec08a1c0a5dff1bc60f9940")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eba1ba3382b5b46d27199f6d84c6be4a0cae5914")]
 [assembly: System.Reflection.AssemblyProductAttribute("AudioMonitor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AudioMonitor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
