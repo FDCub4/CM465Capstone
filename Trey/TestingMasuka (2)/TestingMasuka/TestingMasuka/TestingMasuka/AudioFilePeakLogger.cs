@@ -115,6 +115,7 @@ public class AudioFilePeakLogger
 
             File.AppendAllText(logFilePath, logMessage);
         }
+
     }
     
 

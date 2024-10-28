@@ -316,7 +316,7 @@ namespace TestingMasuka
                     outputDevice = new WaveOutEvent();
                     outputDevice.Init(audioFile);
                     outputDevice.Play();
-                    MessageBox.Show("File is playing. Click 'Stop' to stop playback.");
+                    
                 }
             }
             catch (Exception ex)

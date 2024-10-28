@@ -8,7 +8,7 @@
         xmlns:music="clr-namespace:WPFSoundVisualizationLib;assembly=WPFSoundVisualizationLibNet5"
         xmlns:scottPlot="clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
 
-        Title="MainWindow" Height="1000" WindowStartupLocation="CenterScreen" WindowState="Maximized" Width="1258" Background="#FFAFDCEB">
+        Title="MainWindow" Height="1000" WindowStartupLocation="CenterScreen" WindowState="Maximized" Width="1258" Background="#FFAEC4B5">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="91*"/>
@@ -65,13 +65,13 @@
         <Button x:Name="btnLoadFile" Grid.Column="1" Content="Load File" HorizontalAlignment="Left" Margin="376,198,0,0" VerticalAlignment="Top" Click="btnLoadFile_Click" Grid.ColumnSpan="2"/>
         <TextBox x:Name="txtFileSelected" Grid.Column="2" HorizontalAlignment="Left" Margin="50,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
 
-        <Image x:Name="imgBanner" Source="/BannerCapstone.jpg" 
+        <Image x:Name="imgBanner" Source="C:\Users\treya\OneDrive\Documents\GitHub\CM465Capstone\Trey\TestingMasuka (2)\TestingMasuka\TestingMasuka\TestingMasuka\BannerCapstone.jpg" 
                Grid.Row="0" 
                VerticalAlignment="Top" 
                Stretch="UniformToFill"
                Height="38" 
                Margin="0,19,-4,0" Grid.ColumnSpan="5" />
-        <Image x:Name="imgLogo" Grid.Column="2" HorizontalAlignment="Left" Height="269" Margin="416,58,0,0" VerticalAlignment="Top" Width="219" Source="/pngAudioTranscriber.png" Grid.ColumnSpan="2"/>
+        <Image x:Name="imgLogo" Grid.Column="2" HorizontalAlignment="Left" Height="269" Margin="416,58,0,0" VerticalAlignment="Top" Width="219" Source="C:\Users\treya\OneDrive\Documents\GitHub\CM465Capstone\Trey\TestingMasuka (2)\TestingMasuka\TestingMasuka\TestingMasuka\pngAudioTranscriber.png" Grid.ColumnSpan="2"/>
         <!--Button x:Name="btnConvert" Grid.Column="1" Content="Convert To Text" HorizontalAlignment="Left" Margin="476,130,0,0" VerticalAlignment="Top" Click="btnConvert_click"/>-->
         <!--Button x:Name ="btnLoad" Grid.Column="1" Content="Load Notes" HorizontalAlignment="Left" Margin="138,199,0,0" VerticalAlignment="Top"  Click="btnLoadNotes_click"/>-->
     </Grid>

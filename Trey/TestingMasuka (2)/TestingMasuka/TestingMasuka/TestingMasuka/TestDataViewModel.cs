@@ -39,7 +39,7 @@ public class TestData : ViewModel
         const double maxPianoFrequency = 4186.0; // C8
         int totalNotes = 0;
         double lastTimestamp = 0.0;
-        int notesPerStaff = 40;
+        int notesPerStaff = 30;
         int currentStaffIndex = 0;
 
         try
@@ -89,12 +89,7 @@ public class TestData : ViewModel
                         if (timeDifference > 2.0)
                             timeDifference = 2.0;
 
-                        // Add further processing here for the note creation and staff management
-                    
-                
-
-
-
+                  
                 RhythmicDuration rhythmicDuration = ConvertToRhythmicDuration(timeDifference);
 
                         //staffsArray[currentStaffIndex].Elements.Add(new Note(FrequencyDetermined(peakFrequency), rhythmicDuration));
@@ -106,12 +101,18 @@ public class TestData : ViewModel
                             staffsArray[currentStaffIndex].Elements.Add(new Note(FrequencyDetermined(peakFrequency), rhythmicDuration));
                             totalNotes++;
 
-                            // Check if we need to switch to the next staff, but only if we're still within the note limit
+                            if ((staffsArray[currentStaffIndex].Elements.Count - 2) % 4 == 0)
+                            {
+                                staffsArray[currentStaffIndex].Elements.Add(new Barline());
+                            }
+
                             if (totalNotes < 100 && totalNotes % notesPerStaff == 0 && currentStaffIndex < staffsArray.Length - 1)
                             {
                                 currentStaffIndex++; // Move to the next staff
                             }
                         }
+
+                       
 
                     }
                     
@@ -122,7 +123,9 @@ public class TestData : ViewModel
                     {
                         score.Staves.Remove(staff);
                     }
+
                 }
+                
 
                 Data = score;  // Update score with staves
             }
